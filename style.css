@@ -1,0 +1,247 @@
+/* CSS FOR STYLING THE PAGE */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap';
+body {
+    font-family: 'Lucida Fax';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 88%;
+    margin: 0 auto;
+}
+.budget-section,
+.record-section {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d0d6e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.budget-section {
+    background-color: #eaf0f6;
+}
+h1,h2 {
+    color: #cd3b0a;
+    font-weight: 700;
+    font-size: 22px;
+}
+.budget-info p {
+    margin: 10px 0;
+    color: #2e3a59;
+}
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #c1c6d4;
+    border-radius: 6px;
+}
+button {
+    padding: 12px 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+button:hover {
+    background-color: #dd1717;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.record-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.record-section li {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #d0d6e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#export-pdf-btn {
+    background-color: #0056b3;
+    margin-top: 10px;
+}
+#export-pdf-btn:hover {
+    background-color: #218838;
+}
+footer {
+    width: 88%;
+    margin-left: 3.5%;
+    padding: 15px;
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.footer-icons {
+    margin-top: 10px;
+}
+.footer-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footer-icons a:hover {
+    color: #b0bec5;
+}
+.preloader {
+    font-family: 'Lucida Fax';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+    color: #3498db;
+    font-size: 40px;
+    text-align: center;
+}
+.loading-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.letter {
+    display: inline-block;
+    animation: jump 0.6s ease-in-out infinite;
+}
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.2s; }
+.letter:nth-child(4) { animation-delay: 0.3s; }
+.letter:nth-child(5) { animation-delay: 0.4s; }
+.letter:nth-child(6) { animation-delay: 0.5s; }
+.letter:nth-child(7) { animation-delay: 0.6s; }
+.letter:nth-child(8) { animation-delay: 0.7s; }
+.letter:nth-child(9) { animation-delay: 0.8s; }
+.letter:nth-child(10) { animation-delay: 0.9s; }
+.letter:nth-child(11) { animation-delay: 1s; }
+.letter:nth-child(12) { animation-delay: 1.1s; }
+.letter:nth-child(13) { animation-delay: 1.2s; }
+.letter:nth-child(14) { animation-delay: 1.3s; }
+.letter:nth-child(15) { animation-delay: 1.4s; }
+.dots {
+    display: inline-block;
+    margin-left: 5px;
+}
+.dot {
+    display: inline-block;
+    animation: jump 0.6s ease-in-out infinite;
+}
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+@media (min-width: 280px) {
+    .container {
+        padding: 10px;
+    }
+    .budget-section,
+    .record-section {
+        padding: 10px;
+    }
+    input[type="number"],
+    input[type="text"] {
+        padding: 10px;
+    }
+    button {
+        padding: 10px 20px;
+    }
+    #export-pdf-btn {
+        font-size: 14px;
+    }
+    footer {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .preloader {
+        font-size: 20px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+    footer {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .preloader {
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-left: 20%;
+    }
+    .budget-section {
+        width: 60%;
+    }
+    .record-section {
+        width: 60%;
+    }
+    #export-pdf-btn {
+        position: static;
+        margin-top: 10px;
+    }
+    footer {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .preloader {
+        font-size: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        margin-left: 25%;
+    }
+    .preloader {
+        font-size: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin-left: 30%;
+    }
+    .preloader {
+        font-size: 45px;
+    }
+}
