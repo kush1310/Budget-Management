@@ -45,5 +45,16 @@ The application utilizes **media queries** to ensure a seamless experience on:
 
 1. Clone the repository:
 
-   ```bash
+```bash
    git clone https://github.com/kush1310/Budget-Management.git
+```
+
+---
+
+### Author  
+--- Kush Amit Shah  
+--- Diploma in Computer Engineering  
+--- B.Tech (Pursuing)
+--- Gujarat, India  
+--- Mail: kushshah900@gmail.com  
+--- Interests: Cybersecurity | Web Development | Logical Programming  
